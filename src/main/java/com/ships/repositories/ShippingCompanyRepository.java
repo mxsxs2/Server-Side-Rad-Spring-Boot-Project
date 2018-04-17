@@ -6,6 +6,5 @@ import org.springframework.stereotype.Repository;
 import com.ships.model.ShippingCompany;
 
 @Repository
-public interface ShippingCompanyRepository extends CrudRepository<ShippingCompany, Long> {
-
+public interface ShippingCompanyRepository extends CrudRepository<ShippingCompany, Integer> {
 }

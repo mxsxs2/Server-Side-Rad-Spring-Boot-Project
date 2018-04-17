@@ -11,7 +11,10 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import org.hibernate.annotations.DynamicUpdate;
+
 @Entity
+@DynamicUpdate // So only the updated fields will save rather than the whole entity
 public class Ship {
 	@Id
 	@GeneratedValue
