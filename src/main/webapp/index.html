@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>SS RAD Final Project</title>
+<meta charset="UTF-8">
+<title>SS RAD Final Project</title>
+
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<table>
-	  <tr>
-	    <th>Ships</th>
-	    <th>Shipping Companies</th> 
-	    <th>Orders</th>
-	  </tr>
-	  <tr>
-	    <td><a href="/showShips">List Ships</a></td>
-	    <td><a href="/showShippingCompanies">List Shipping Companies</a></td>
-	    <td><a href="/showOrders">List Orders</a></td>
-	  </tr>
-	  <tr>
-	    <td><a href="/addShip">Add Ship</a></td>
-	    <td><a href="/addShippingCompany">Add Shipping Company</a></td>
-	    <td><a href="/createOrder">Create Order</a></td>
-	  </tr>
-	</table>   
-	<br>
-	<a href="/logout">Logout</a> 
+	<div id="page">
+		<div class="maincontainer">
+			<div class="container">
+				<div class="panel panel-default" id="indexpanel">
+					<div class="panel-body">
+						<table id="index">
+							<tr>
+								<th>Ships</th>
+								<th>Shipping Companies</th>
+								<th>Orders</th>
+							</tr>
+							<tr>
+								<td><a href="/showShips" class="btn btn-default">List Ships</a></td>
+								<td><a href="/showShippingCompanies" class="btn btn-default">List Shipping Companies</a></td>
+								<td><a href="/showOrders" class="btn btn-default">List Orders</a></td>
+							</tr>
+							<tr>
+								<td><a href="/addShip" class="btn btn-default">Add Ship</a></td>
+								<td><a href="/addShippingCompany" class="btn btn-default">Add Shipping Company</a></td>
+								<td><a href="/createOrder" class="btn btn-default">Create Order</a></td>
+							</tr>
+						</table>
+						<br> <a href="/logout" class="btn btn-default">Logout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

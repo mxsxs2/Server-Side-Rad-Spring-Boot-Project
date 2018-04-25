@@ -1,3 +1,66 @@
-table, th, td {
-    border: 1px solid black;
+body{
+	background-image:url(../images/google_earth_bg.jpg);
+}
+
+#page{
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  	min-height: 100vh; /* These two lines are counted as one :-)       */
+  	display: flex;
+  	align-items: center;
+}
+.maincontainer{
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  	min-height: 100vh; /* These two lines are counted as one :-)       */
+  	display: flex;
+  	align-items: center;
+	background-color: rgba(245, 245, 245, 0.4);
+	margin:auto;
+}
+
+.panel{
+	margin-top:20px;
+}
+
+#indexpanel{
+	background-color: rgba(245, 245, 245, 0.4);
+}
+
+.ajaxResponseMessage{
+	display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight:bold;
+    color:green;
+}
+.error{
+	color:red;
+}
+table{
+	width: 100%;
+    text-align: center;
+}
+
+th{
+	text-align: center;
+}
+
+#addform table{
+	margin-bottom:5px;
+}
+
+#addform td{
+	vertical-align:middle;
+}
+
+#addform td label{
+	margin-bottom:0px;
+	margin-right:5px;;
+}
+
+.btn{
+	min-width: 200px;
+}
+form table{
+	text-align: left !important;
 }
