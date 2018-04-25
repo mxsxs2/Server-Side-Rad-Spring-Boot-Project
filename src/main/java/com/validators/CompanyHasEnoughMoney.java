@@ -13,7 +13,7 @@ import javax.validation.Payload;
 @Constraint(validatedBy = { CompanyHasEnoughMoneyValidator.class })
 public @interface CompanyHasEnoughMoney {
 
-	String message() default "{ordererror.message}";
+	String message() default "Shipping company balance is less than cost of ship - Cannot place order";
 
 	Class<?>[] groups() default {};
 
